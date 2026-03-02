@@ -17,7 +17,7 @@ public class AgendaPage {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private UUID id;
 
     @NotNull
     private String title;

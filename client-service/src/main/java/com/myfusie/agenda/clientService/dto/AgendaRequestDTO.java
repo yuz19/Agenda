@@ -2,10 +2,11 @@ package com.myfusie.agenda.clientService.dto;
 
 import com.myfusie.agenda.clientService.dto.validators.CreateAgendaValidationGroup;
 import com.myfusie.agenda.clientService.model.AgendaPage;
-import com.sun.istack.NotNull;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import java.time.LocalDate;
 import java.util.List;
 @Data
 public class AgendaRequestDTO {
@@ -14,8 +15,8 @@ public class AgendaRequestDTO {
     private String title;
     @NotBlank(message = "description is required")
     private String description;
-    @NotBlank(groups = CreateAgendaValidationGroup.class,message = "Creation Date is required")
-    private String creationDate;
+    @NotNull(groups = CreateAgendaValidationGroup.class,message = "Creation Date is required")
+    private LocalDate creationDate;
 
-    private List<AgendaPage> pages;
+//    private List<AgendaPage> pages;
 }

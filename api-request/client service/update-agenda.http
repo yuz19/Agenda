@@ -1,0 +1,8 @@
+### Create Agenda
+PUT http://localhost:8080/api/v1/Agenda/d33e57fe-b1c6-4d53-88ea-df63493af29b
+Content-Type: application/json
+
+{
+  "title": "nabil ewdsad",
+  "description": "update test"
+}

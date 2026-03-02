@@ -18,6 +18,7 @@ public class AgendaMapper {
 //        private String creationDate;
         agendaResponseDTO.setTitle(agenda.getTitle());
         agendaResponseDTO.setDescription(agenda.getDescription());
+
 //        agendaResponseDTO.setPages(agenda.getPages());
         return  agendaResponseDTO;
     }
@@ -31,6 +32,7 @@ public class AgendaMapper {
 //        private String creationDate;
         agenda.setTitle(agendaRequestDTO.getTitle());
         agenda.setDescription(agendaRequestDTO.getDescription());
+        agenda.setCreationDate(agendaRequestDTO.getCreationDate());
 //        agendaResponseDTO.setPages(agenda.getPages());
         return  agenda;
     }
