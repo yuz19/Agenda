@@ -1,5 +1,5 @@
 # secrets
-application-local.yml
+application-client.yml
 
 # build
 target/
